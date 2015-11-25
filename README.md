@@ -8,6 +8,12 @@ Installing
 composer require "twentyua/html-validator-bundle"
 ```
 
+Add the bundle to your **AppKernel.php**:
+
+```
+new \TwentyUa\HtmlValidatorBundle\TwentyUaHtmlValidatorBundle(),
+```
+
 Configuration
 ------------
 
@@ -18,5 +24,5 @@ Usage
 --------
 
 ```
-    $container->get('twentyua_htmlvalidator.validator').isMarkupValid($html);
+$container->get('twentyua_htmlvalidator.validator')->isMarkupValid($html);
 ```
