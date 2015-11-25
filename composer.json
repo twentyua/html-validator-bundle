@@ -1,0 +1,21 @@
+{
+    "name": "twentyua/html-validator-bundle",
+
+    "autoload": {
+        "psr-0": {
+            "TwentyUa": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Roman Yakovenko",
+            "email": "erelus@gmail.com"
+        }
+    ],
+    "require": {
+      "kriswallsmith/buzz": "~0.15"
+    },
+    "require-dev": {
+      "phpunit/phpunit": "3.7.*"
+    }
+}
