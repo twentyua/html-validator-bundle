@@ -28,8 +28,9 @@ class W3cValidator implements ValidatorInterface
 
     public function isMarkupValid($content)
     {
-        $response = $this->browser->post("https://validator.w3.org/nu/?out=json", [
-            'Content-Type: text/html; charset=utf-8',
+        $response = $this->browser->post('https://validator.w3.org/nu/?out=json', [
+            'Content-Type' => 'text/html',
+            'User-Agent'   => 'w3c api',
         ], $content);
 
         $data = json_decode($response->getContent());
